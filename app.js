@@ -7,6 +7,7 @@ const globalErrorHandler = require('./controllers/errorController');
 const loginController = require('./controllers/loginController');
 const signupController = require('./controllers/signupController');
 
+//started express app
 const app = express();
 
 //for development purpose -- it logs requests
