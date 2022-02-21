@@ -35,6 +35,7 @@ This api following functionalities.
     *GET* /api/v1/users/login
 
 **Response _(for-success)_**
+
     ```
         {
             "status": "success",
