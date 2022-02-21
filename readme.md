@@ -25,7 +25,7 @@ Before explaining functionality of api, here's how one can run this project on t
     JWT_SECRET=create-your-own-secret-token-for-authentication
     JWT_EXPIRES_IN=90d
     ```
-This api following functionalities.
+This api has following functionalities.
 1. Login
 2. Signup
 
@@ -37,10 +37,10 @@ This api following functionalities.
 **Response _(for-success)_**
 
     ```
-        {
-            "status": "success",
-            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTM5MzE2MTlhNmE5MzFiNDNlNDBjNCIsImlhdCI6MTY0NTQ1MDA2NiwiZXhwIjoxNjUzMjI2MDY2fQ.AbBIF614C_alCojRkhhk6m-F71Jc6zRNo8HclYSL8fU"
-        }
+    {
+        "status": "success",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTM5MzE2MTlhNmE5MzFiNDNlNDBjNCIsImlhdCI6MTY0NTQ1MDA2NiwiZXhwIjoxNjUzMjI2MDY2fQ.AbBIF614C_alCojRkhhk6m-F71Jc6zRNo8HclYSL8fU"
+    }
     ```
 
 - tested against data
