@@ -55,5 +55,42 @@ Here's screenshot of successfull login
 
 ![login-successfull](images/dev/login-successfull.png)
 
+
 ## Signup
+
+**Query**
+    *POST* /api/v1/users/signup
+
+**Response _(for-success)_**
+
+    ```
+    {
+        "status": "success",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTM5MzE2MTlhNmE5MzFiNDNlNDBjNCIsImlhdCI6MTY0NTQ1MDAwNiwiZXhwIjoxNjUzMjI2MDA2fQ.FKxkEbudpXHNOlmL5YVJgIPKR4B40HDxMqdQ5h5jDJ8",
+        "data": {
+            "_id": "6213931619a6a931b43e40c4",
+            "name": "user1",
+            "email": "user1@gmail.com",
+            "password": "$2a$12$iVhbSXW53EY1TGYD3ERBYebRrW0OWt5DktYRBXW/2bymw8/6nhBXW",
+            "phoneNumber": "9298102887",
+            "dob": "2002-04-09",
+            "__v": 0
+        }
+    }
+    ```
+
+- tested against data
+
+    ```
+    {
+        "name" :"user1",
+        "email" :"user1@gmail.com",
+        "password":"ValidUser1",
+        "passwordConfirm":"ValidUser1",
+        "phoneNumber":"9298102887",
+        "dob":"2002-04-09"
+    }
+    ```
+Here's screenshot of successfull signup
+
 ![signup-successfull](images/dev/signup-successfull.png)
