@@ -37,10 +37,11 @@ const userSchema = new mongoose.Schema({
         required:[true,"The user must have a number"],
         validate:[validator.isMobilePhone,"Provide valid number"]
     },
-    // dob:{
-    //     type:Date,
-    //     required:[true,"Must provide date of birth"],
-    // }
+    dob:{
+        type:String,
+        required:[true,"Must provide date of birth"],
+        validate:[validator.isDate,"Provide valid date"]
+    }
 });
 
 userSchema.pre('save',async function(next){
